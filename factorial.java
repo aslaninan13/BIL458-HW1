@@ -18,3 +18,4 @@ public class factorial {
         System.out.println("The factorial of " + number + " is " + result);
     }
 }
+
