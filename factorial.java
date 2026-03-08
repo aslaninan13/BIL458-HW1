@@ -1,11 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-</module>
+import java.util.Scanner;
+
+public class factorial {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a positive integer: ");
+        int number = scanner.nextInt();
+
+        int result = 1;
+
+        for (int i = 1; i <= number; i++) {
+            result = result * i;
+        }
+
+        System.out.println("The factorial of " + number + " is " + result);
+    }
+}
